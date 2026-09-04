@@ -1,358 +1,391 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ca">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>L'Antic Bocoi del Gòtic | Cuina catalana a Barcelona</title>
 
   <meta
     name="description"
-    content="L'Antic Bocoi del Gòtic — cuina catalana al cor de Barcelona."
-  >
+    content="L'Antic Bocoi del Gòtic. Cuina catalana al cor del Barri Gòtic de Barcelona. Producte fresc, receptes tradicionals i postres casolanes."
+  />
 
-  <meta name="theme-color" content="#171512">
+  <link rel="icon" href="./favicon.ico" sizes="any" />
 
-  <title>L'Antic Bocoi del Gòtic — Cuina catalana</title>
-
-  <link rel="icon" href="./favicon.ico" sizes="any">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet"
-  >
+  />
 
-  <link rel="stylesheet" href="./src/styles.css">
+  <link rel="stylesheet" href="./src/styles.css" />
 </head>
 
 <body>
 
-<header>
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
 
-  <a class="brand" href="#inici" aria-label="L'Antic Bocoi del Gòtic">
-    <div class="brand-logo-wrap">
-      <img
-        src="./public/assets/logo.png"
-        alt="L'Antic Bocoi del Gòtic"
-        class="brand-logo"
-      >
-    </div>
-  </a>
+  <header class="site-header">
+    <div class="header-inner">
 
-  <nav>
-    <a href="#historia">Història</a>
-    <a href="#cuina">Cuina</a>
-    <a href="#contacte">Contacte</a>
-  </nav>
-
-  <div class="header-actions">
-
-    <a
-      class="instagram-link"
-      href="https://www.instagram.com/antic_bocoi/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Instagram de L'Antic Bocoi del Gòtic"
-    >
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-        <circle cx="12" cy="12" r="4"></circle>
-        <circle cx="17.5" cy="6.5" r="1"></circle>
-      </svg>
-    </a>
-
-    <a class="topbtn" href="tel:+34933105067">
-      Reservar taula
-    </a>
-
-  </div>
-
-</header>
-
-
-<section class="hero" id="inici">
-
-  <div class="shade"></div>
-
-  <div class="heroText">
-
-    <small>
-      BAIXADA DE VILADEC0LS · BARCELONA
-    </small>
-
-    <h1>
-      Cuina catalana<br>
-      <i>amb història.</i>
-    </h1>
-
-    <p>
-      Producte de qualitat, receptes amb arrel i una manera
-      propera d'entendre l'hospitalitat, al cor del Gòtic.
-    </p>
-
-    <div class="hero-actions">
-
-      <a class="btn light" href="tel:+34933105067">
-        Reservar taula
+      <a href="#inici" class="brand" aria-label="L'Antic Bocoi del Gòtic">
+        <div class="brand-logo-wrap">
+          <img
+            src="./public/assets/logo.png"
+            alt="L'Antic Bocoi del Gòtic"
+            class="brand-logo"
+          />
+        </div>
       </a>
 
-      <a
-        class="email-hero"
-        href="mailto:info@bocoi.net?subject=Reserva%20de%20taula"
-      >
-        <span>✉</span>
-        Enviar un correu
-      </a>
-
-      <a class="under" href="#cuina">
-        Descobrir la cuina ↓
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="section intro">
-
-  <label>01 — L'ESSÈNCIA</label>
-
-  <div class="twocol">
-
-    <h2>
-      Un restaurant amb<br>
-      <i>ànima pròpia.</i>
-    </h2>
-
-    <div>
-
-      <p>
-        Benvinguts a L'Antic Bocoi del Gòtic, un espai acollidor
-        on la cuina catalana i el producte de qualitat són
-        els protagonistes.
-      </p>
-
-      <p>
-        Ingredients frescos de primera qualitat, una preparació
-        senzilla i acurada i respecte pel gust de cada producte.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section class="section" id="historia">
-
-  <label>02 — UNA HISTÒRIA QUE CONTINUA</label>
-
-  <div class="story">
-
-    <img
-      src="./public/assets/historia-1.jpg"
-      alt="Equip del restaurant a l'interior"
-      loading="lazy"
-    >
-
-    <div>
-
-      <h2>
-        Al darrere de cada taula hi ha
-        <i>persones.</i>
-      </h2>
-
-      <p>
-        Un restaurant també és la gent que el fa possible.
-        La cuina, la sala, les converses i els anys compartits
-        formen part de l'experiència.
-      </p>
-
-      <p>
-        A L'Antic Bocoi, la tradició és també una manera de fer,
-        de rebre i de cuidar els detalls.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <div class="archive">
-
-    <img
-      src="./public/assets/historia-2.jpg"
-      alt="Fotografia històrica de l'equip"
-      loading="lazy"
-    >
-
-    <blockquote>
-      “Amb els anys, la passió per la cuina
-      i l'hospitalitat continua.”
-    </blockquote>
-
-  </div>
-
-</section>
-
-
-<section class="section cuisine" id="cuina">
-
-  <label>03 — LA NOSTRA CUINA</label>
-
-  <div class="twocol">
-
-    <h2>
-      El producte<br>
-      <i>parla per si sol.</i>
-    </h2>
-
-    <p>
-      Ingredients frescos de primera qualitat, preparats
-      amb senzillesa i cura per conservar tot el seu gust.
-    </p>
-
-  </div>
-
-
-  <div class="cards">
-
-    <article>
-      <small>01</small>
-
-      <h3>
-        Coques<br>
-        de recapte
-      </h3>
-
-      <p>
-        Pebrot · albergínia · sobrassada · figues · arengades
-      </p>
-    </article>
-
-
-    <article>
-      <small>02</small>
-
-      <h3>
-        Amanides<br>
-        originals
-      </h3>
-
-      <p>
-        Salmó · foie-gras · parmesà · ceps
-      </p>
-    </article>
-
-
-    <article>
-      <small>03</small>
-
-      <h3>
-        Embotits<br>
-        i formatges
-      </h3>
-
-      <p>
-        Productes de qualitat i petits productors
-      </p>
-    </article>
-
-
-    <article>
-      <small>04</small>
-
-      <h3>
-        Postres<br>
-        casolanes
-      </h3>
-
-      <p>
-        Per acabar l'àpat amb aquell toc fet a casa
-      </p>
-    </article>
-
-  </div>
-
-</section>
-
-
-<section class="experience">
-
-  <div>
-
-    <label>
-      04 — L'EXPERIÈNCIA
-    </label>
-
-    <h2>
-      Una taula,<br>
-      <i>un moment.</i>
-    </h2>
-
-    <p>
-      Entre pedra, fusta i llum càlida, el Gòtic posa
-      el marc i nosaltres ens ocupem de la resta.
-    </p>
-
-  </div>
-
-</section>
-
-
-<section class="section" id="contacte">
-
-  <label>05 — VISITA'NS</label>
-
-  <div class="visit">
-
-    <h2>
-      Al cor del<br>
-      <i>Barri Gòtic.</i>
-    </h2>
-
-    <div class="details">
-
-      <p>
-        <small>ADREÇA</small>
-        Baixada de Viladecols, 3<br>
-        08002 Barcelona
-      </p>
-
-      <p>
-        <small>TELÈFON</small>
-        <a href="tel:+34933105067">
-          933 10 50 67
-        </a>
-      </p>
-
-      <p>
-        <small>CORREU</small>
-        <a href="mailto:info@bocoi.net">
-          info@bocoi.net
-        </a>
-      </p>
-
-      <p>
-        <small>HORARI</small>
-        19:00 — 23:00
-      </p>
-
-      <div class="reservation-buttons">
+      <div class="header-actions">
 
         <a
-          class="btn dark"
+          class="instagram-link"
+          href="https://www.instagram.com/antic_bocoi/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram de L'Antic Bocoi del Gòtic"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1"></circle>
+          </svg>
+
+          <span>Instagram</span>
+        </a>
+
+        <a
+          class="header-reservation"
           href="tel:+34933105067"
         >
-          Reservar per telèfon
+          Reservar taula
         </a>
 
+      </div>
+    </div>
+  </header>
+
+
+  <main id="inici">
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+      <div class="hero-image"></div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow hero-eyebrow">
+          BAIXADA DE VILADEC0LS · BARCELONA
+        </p>
+
+        <h1>
+          L'Antic Bocoi
+          <span>del Gòtic</span>
+        </h1>
+
+        <p class="hero-description">
+          Cuina catalana de sempre, feta amb producte fresc,
+          senzillesa i respecte per cada ingredient.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            class="button button-primary"
+            href="tel:+34933105067"
+          >
+            Reservar taula
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="mailto:info@bocoi.net?subject=Reserva%20de%20taula"
+          >
+            Enviar un correu
+          </a>
+
+          <a
+            class="button button-ghost"
+            href="#cuina"
+          >
+            Descobrir la cuina
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-scroll">
+        <span>Descobreix</span>
+        <div class="scroll-line"></div>
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ESSENCE
+    ====================================================== -->
+
+    <section class="section intro-section">
+
+      <div class="container intro-grid">
+
+        <div class="section-label">
+          <span>01</span>
+          <span>La nostra essència</span>
+        </div>
+
+        <div class="intro-copy">
+
+          <p class="eyebrow">
+            CUINA CATALANA · PRODUCTE · TRADICIÓ
+          </p>
+
+          <h2>
+            Sabors que parlen
+            <em>de casa.</em>
+          </h2>
+
+          <p class="lead">
+            A L'Antic Bocoi del Gòtic apostem per una cuina
+            honesta, propera i sense artificis.
+          </p>
+
+          <p>
+            Ingredients frescos de primera qualitat, una preparació
+            senzilla i acurada i el respecte per conservar tots
+            els gustos de cada producte.
+          </p>
+
+          <p>
+            Una proposta arrelada a la cuina catalana i pensada
+            per gaudir sense presses al cor del Barri Gòtic.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HISTÒRIA
+    ====================================================== -->
+
+    <section class="section history-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="section-label">
+            <span>02</span>
+            <span>Una història</span>
+          </div>
+
+          <div>
+            <p class="eyebrow">ARRELS I PERSONES</p>
+
+            <h2>
+              Un restaurant amb
+              <em>memòria.</em>
+            </h2>
+          </div>
+
+        </div>
+
+
+        <div class="history-grid">
+
+          <div class="history-image history-image-large">
+            <img
+              src="./public/assets/historia-1.jpg"
+              alt="L'Antic Bocoi del Gòtic"
+            />
+          </div>
+
+          <div class="history-copy">
+
+            <p class="history-number">L'ANTIC BOCOI</p>
+
+            <h3>
+              Més que una taula,
+              una manera d'entendre
+              la cuina.
+            </h3>
+
+            <p>
+              Al nostre restaurant hi ha una història feta de
+              persones, plats i moments compartits.
+            </p>
+
+            <p>
+              Una casa on la cuina catalana es viu amb naturalitat:
+              bons ingredients, receptes tradicionals i aquella
+              proximitat que fa que cada visita sigui especial.
+            </p>
+
+            <div class="small-line"></div>
+
+            <p class="signature">
+              Tradició, producte i dedicació.
+            </p>
+
+          </div>
+
+          <div class="history-image history-image-small">
+            <img
+              src="./public/assets/historia-2.jpg"
+              alt="L'equip de L'Antic Bocoi del Gòtic"
+            />
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CUINA
+    ====================================================== -->
+
+    <section class="section cuisine-section" id="cuina">
+
+      <div class="container">
+
+        <div class="section-heading cuisine-heading">
+
+          <div class="section-label">
+            <span>03</span>
+            <span>La cuina</span>
+          </div>
+
+          <div>
+            <p class="eyebrow">PRODUCTE FRESC · SABOR · TEMPORADA</p>
+
+            <h2>
+              El gust de
+              <em>la senzillesa.</em>
+            </h2>
+          </div>
+
+        </div>
+
+
+        <div class="cuisine-grid">
+
+          <article class="cuisine-card">
+
+            <span class="card-number">01</span>
+
+            <h3>Coques de recapte</h3>
+
+            <p>
+              Una de les nostres especialitats, amb farcits
+              tradicionals com pebrot, albergínia, sobrassada,
+              figues o arengades.
+            </p>
+
+          </article>
+
+
+          <article class="cuisine-card">
+
+            <span class="card-number">02</span>
+
+            <h3>Amanides originals</h3>
+
+            <p>
+              Combinacions de producte fresc amb ingredients
+              com salmó, foie-gras, parmesà o ceps.
+            </p>
+
+          </article>
+
+
+          <article class="cuisine-card">
+
+            <span class="card-number">03</span>
+
+            <h3>Embotits i formatges</h3>
+
+            <p>
+              Una selecció de productes de qualitat i formatges
+              de petits productors.
+            </p>
+
+          </article>
+
+
+          <article class="cuisine-card">
+
+            <span class="card-number">04</span>
+
+            <h3>Postres casolanes</h3>
+
+            <p>
+              Per acabar l'àpat amb una proposta dolça feta
+              amb la mateixa cura que la resta de la cuina.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EXPERIENCE
+    ====================================================== -->
+
+    <section class="experience-section">
+
+      <div class="experience-image"></div>
+
+      <div class="experience-overlay"></div>
+
+      <div class="container experience-content">
+
+        <p class="eyebrow">AL COR DEL GÒTIC</p>
+
+        <h2>
+          Una taula.
+          <br />
+          Una conversa.
+          <br />
+          <em>Un bon àpat.</em>
+        </h2>
+
+        <p>
+          Vine a descobrir una cuina catalana propera
+          en un dels racons amb més història de Barcelona.
+        </p>
+
         <a
-          class="btn email-btn"
+          class="button button-light"
           href="mailto:info@bocoi.net?subject=Reserva%20de%20taula"
         >
           Reservar per correu
@@ -360,49 +393,196 @@
 
       </div>
 
+    </section>
+
+
+    <!-- =====================================================
+         CONTACTE
+    ====================================================== -->
+
+    <section class="section contact-section" id="contacte">
+
+      <div class="container">
+
+        <div class="contact-grid">
+
+          <div>
+
+            <div class="section-label">
+              <span>04</span>
+              <span>Visita'ns</span>
+            </div>
+
+            <p class="eyebrow">
+              BARRI GÒTIC · BARCELONA
+            </p>
+
+            <h2>
+              Ens trobem
+              <em>a taula.</em>
+            </h2>
+
+            <p class="contact-intro">
+              Reserva la teva taula per telèfon o envia'ns
+              un correu. Estarem encantats de rebre't.
+            </p>
+
+          </div>
+
+
+          <div class="contact-details">
+
+            <div class="contact-item">
+
+              <span class="contact-label">
+                Adreça
+              </span>
+
+              <p>
+                Baixada de Viladecols, 3<br />
+                08002 Barcelona
+              </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <span class="contact-label">
+                Telèfon
+              </span>
+
+              <p>
+                <a href="tel:+34933105067">
+                  +34 933 10 50 67
+                </a>
+              </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <span class="contact-label">
+                Correu
+              </span>
+
+              <p>
+                <a href="mailto:info@bocoi.net">
+                  info@bocoi.net
+                </a>
+              </p>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <span class="contact-label">
+                Instagram
+              </span>
+
+              <p>
+                <a
+                  href="https://www.instagram.com/antic_bocoi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @antic_bocoi
+                </a>
+              </p>
+
+            </div>
+
+
+            <div class="reservation-buttons">
+
+              <a
+                class="button button-primary"
+                href="tel:+34933105067"
+              >
+                Trucar i reservar
+              </a>
+
+              <a
+                class="button button-outline"
+                href="mailto:info@bocoi.net?subject=Reserva%20de%20taula"
+              >
+                Enviar un correu
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+
+        <div class="footer-logo-wrap">
+          <img
+            src="./public/assets/logo.png"
+            alt="L'Antic Bocoi del Gòtic"
+          />
+        </div>
+
+        <p>
+          Cuina catalana al cor del Gòtic.
+        </p>
+
+      </div>
+
+
+      <div class="footer-right">
+
+        <a
+          class="footer-instagram"
+          href="https://www.instagram.com/antic_bocoi/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1"></circle>
+          </svg>
+
+          @antic_bocoi
+
+        </a>
+
+        <p>
+          © <span id="year"></span> L'Antic Bocoi del Gòtic
+        </p>
+
+      </div>
+
     </div>
 
-  </div>
-
-</section>
+  </footer>
 
 
-<footer>
-
-  <div class="footer-brand">
-    <img
-      src="./public/assets/logo.png"
-      alt="L'Antic Bocoi del Gòtic"
-    >
-  </div>
-
-  <div class="footer-right">
-
-    <span>
-      Cuina catalana al cor de Barcelona.
-    </span>
-
-    <a
-      class="footer-instagram"
-      href="https://www.instagram.com/antic_bocoi/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-        <circle cx="12" cy="12" r="4"></circle>
-        <circle cx="17.5" cy="6.5" r="1"></circle>
-      </svg>
-
-      @antic_bocoi
-    </a>
-
-  </div>
-
-</footer>
-
-
-<script src="./src/app.js"></script>
+  <script src="./src/app.js"></script>
 
 </body>
 </html>
