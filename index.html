@@ -1,9 +1,355 @@
-<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="L'Antic Bocoi del Gòtic — cuina catalana al cor de Barcelona."><title>L'Antic Bocoi del Gòtic — Cuina catalana</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="./src/styles.css"></head><body>
-<header><a class="brand" href="#inici"><b>LB</b><span>L'ANTIC BOCOI<small>DEL GÒTIC</small></span></a><nav><a href="#historia">Història</a><a href="#cuina">Cuina</a><a href="#contacte">Contacte</a></nav><a class="topbtn" href="tel:+34933105067">Reservar taula</a></header>
-<section class="hero" id="inici"><div class="shade"></div><div class="heroText"><small>BAIXADA DE VILADECOLS · BARCELONA</small><h1>Cuina catalana<br><i>amb història.</i></h1><p>Producte de qualitat, receptes amb arrel i una manera propera d'entendre l'hospitalitat, al cor del Gòtic.</p><div><a class="btn light" href="tel:+34933105067">Reservar taula</a><a class="under" href="#cuina">Descobrir la cuina ↓</a></div></div></section>
-<section class="section intro"><label>01 — L'ESSÈNCIA</label><div class="twocol"><h2>Un restaurant amb<br><i>ànima pròpia.</i></h2><div><p>Benvinguts a L'Antic Bocoi del Gòtic, un espai acollidor on la cuina catalana i el producte de qualitat són els protagonistes.</p><p>Ingredients frescos de primera qualitat, una preparació senzilla i acurada i respecte pel gust de cada producte.</p></div></div></section>
-<section class="section" id="historia"><label>02 — UNA HISTÒRIA QUE CONTINUA</label><div class="story"><img src="./public/assets/historia-1.jpg" alt="Equip del restaurant a l'interior"><div><h2>Al darrere de cada taula hi ha <i>persones.</i></h2><p>Un restaurant també és la gent que el fa possible. La cuina, la sala, les converses i els anys compartits formen part de l'experiència.</p><p>A L'Antic Bocoi, la tradició és també una manera de fer, de rebre i de cuidar els detalls.</p></div></div><div class="archive"><img src="./public/assets/historia-2.jpg" alt="Fotografia històrica de l'equip"><blockquote>“Amb els anys, la passió per la cuina i l'hospitalitat continua.”</blockquote></div></section>
-<section class="section cuisine" id="cuina"><label>03 — LA NOSTRA CUINA</label><div class="twocol"><h2>El producte<br><i>parla per si sol.</i></h2><p>Ingredients frescos de primera qualitat, preparats amb senzillesa i cura per conservar tot el seu gust.</p></div><div class="cards"><article><small>01</small><h3>Coques<br>de recapte</h3><p>Pebrot · albergínia · sobrassada · figues · arengades</p></article><article><small>02</small><h3>Amanides<br>originals</h3><p>Salmó · foie-gras · parmesà · ceps</p></article><article><small>03</small><h3>Embotits<br>i formatges</h3><p>Productes de qualitat i petits productors</p></article><article><small>04</small><h3>Postres<br>casolanes</h3><p>Per acabar l'àpat amb aquell toc fet a casa</p></article></div></section>
-<section class="experience"><div><label>04 — L'EXPERIÈNCIA</label><h2>Una taula,<br><i>un moment.</i></h2><p>Entre pedra, fusta i llum càlida, el Gòtic posa el marc i nosaltres ens ocupem de la resta.</p></div></section>
-<section class="section" id="contacte"><label>05 — VISITA'NS</label><div class="visit"><h2>Al cor del<br><i>Barri Gòtic.</i></h2><div class="details"><p><small>ADREÇA</small>Baixada de Viladecols, 3<br>08002 Barcelona</p><p><small>TELÈFON</small><a href="tel:+34933105067">933 10 50 67</a></p><p><small>HORARI</small>19:00 — 23:00</p><a class="btn dark" href="tel:+34933105067">Reservar per telèfon</a></div></div></section>
-<footer><strong>L'ANTIC BOCOI <small>DEL GÒTIC</small></strong><span>Cuina catalana al cor de Barcelona.</span></footer><script src="./src/app.js"></script></body></html>
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="L'Antic Bocoi del Gòtic — cuina catalana al cor de Barcelona."
+  >
+
+  <meta name="theme-color" content="#171512">
+
+  <title>L'Antic Bocoi del Gòtic — Cuina catalana</title>
+
+  <link rel="icon" href="./favicon.ico" sizes="any">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body>
+
+<header>
+
+  <a class="brand" href="#inici" aria-label="L'Antic Bocoi del Gòtic">
+
+    <img
+      src="./public/assets/logo.png"
+      alt="L'Antic Bocoi del Gòtic"
+      class="brand-logo"
+    >
+
+  </a>
+
+  <nav>
+    <a href="#historia">Història</a>
+    <a href="#cuina">Cuina</a>
+    <a href="#contacte">Contacte</a>
+  </nav>
+
+  <a class="topbtn" href="tel:+34933105067">
+    Reservar taula
+  </a>
+
+</header>
+
+
+<section class="hero" id="inici">
+
+  <div class="shade"></div>
+
+  <div class="heroText">
+
+    <small>
+      BAIXADA DE VILADEC0LS · BARCELONA
+    </small>
+
+    <h1>
+      Cuina catalana<br>
+      <i>amb història.</i>
+    </h1>
+
+    <p>
+      Producte de qualitat, receptes amb arrel i una manera
+      propera d'entendre l'hospitalitat, al cor del Gòtic.
+    </p>
+
+    <div>
+
+      <a class="btn light" href="tel:+34933105067">
+        Reservar taula
+      </a>
+
+      <a class="under" href="#cuina">
+        Descobrir la cuina ↓
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section intro">
+
+  <label>01 — L'ESSÈNCIA</label>
+
+  <div class="twocol">
+
+    <h2>
+      Un restaurant amb<br>
+      <i>ànima pròpia.</i>
+    </h2>
+
+    <div>
+
+      <p>
+        Benvinguts a L'Antic Bocoi del Gòtic, un espai acollidor
+        on la cuina catalana i el producte de qualitat són
+        els protagonistes.
+      </p>
+
+      <p>
+        Ingredients frescos de primera qualitat, una preparació
+        senzilla i acurada i respecte pel gust de cada producte.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section" id="historia">
+
+  <label>02 — UNA HISTÒRIA QUE CONTINUA</label>
+
+  <div class="story">
+
+    <img
+      src="./public/assets/historia-1.jpg"
+      alt="Equip del restaurant a l'interior"
+      loading="lazy"
+    >
+
+    <div>
+
+      <h2>
+        Al darrere de cada taula hi ha
+        <i>persones.</i>
+      </h2>
+
+      <p>
+        Un restaurant també és la gent que el fa possible.
+        La cuina, la sala, les converses i els anys compartits
+        formen part de l'experiència.
+      </p>
+
+      <p>
+        A L'Antic Bocoi, la tradició és també una manera de fer,
+        de rebre i de cuidar els detalls.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="archive">
+
+    <img
+      src="./public/assets/historia-2.jpg"
+      alt="Fotografia històrica de l'equip"
+      loading="lazy"
+    >
+
+    <blockquote>
+      “Amb els anys, la passió per la cuina
+      i l'hospitalitat continua.”
+    </blockquote>
+
+  </div>
+
+</section>
+
+
+<section class="section cuisine" id="cuina">
+
+  <label>03 — LA NOSTRA CUINA</label>
+
+  <div class="twocol">
+
+    <h2>
+      El producte<br>
+      <i>parla per si sol.</i>
+    </h2>
+
+    <p>
+      Ingredients frescos de primera qualitat, preparats
+      amb senzillesa i cura per conservar tot el seu gust.
+    </p>
+
+  </div>
+
+
+  <div class="cards">
+
+    <article>
+
+      <small>01</small>
+
+      <h3>
+        Coques<br>
+        de recapte
+      </h3>
+
+      <p>
+        Pebrot · albergínia · sobrassada · figues · arengades
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <small>02</small>
+
+      <h3>
+        Amanides<br>
+        originals
+      </h3>
+
+      <p>
+        Salmó · foie-gras · parmesà · ceps
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <small>03</small>
+
+      <h3>
+        Embotits<br>
+        i formatges
+      </h3>
+
+      <p>
+        Productes de qualitat i petits productors
+      </p>
+
+    </article>
+
+
+    <article>
+
+      <small>04</small>
+
+      <h3>
+        Postres<br>
+        casolanes
+      </h3>
+
+      <p>
+        Per acabar l'àpat amb aquell toc fet a casa
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<section class="experience">
+
+  <div>
+
+    <label>
+      04 — L'EXPERIÈNCIA
+    </label>
+
+    <h2>
+      Una taula,<br>
+      <i>un moment.</i>
+    </h2>
+
+    <p>
+      Entre pedra, fusta i llum càlida, el Gòtic posa
+      el marc i nosaltres ens ocupem de la resta.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="section" id="contacte">
+
+  <label>05 — VISITA'NS</label>
+
+  <div class="visit">
+
+    <h2>
+      Al cor del<br>
+      <i>Barri Gòtic.</i>
+    </h2>
+
+    <div class="details">
+
+      <p>
+        <small>ADREÇA</small>
+        Baixada de Viladecols, 3<br>
+        08002 Barcelona
+      </p>
+
+      <p>
+        <small>TELÈFON</small>
+        <a href="tel:+34933105067">
+          933 10 50 67
+        </a>
+      </p>
+
+      <p>
+        <small>HORARI</small>
+        19:00 — 23:00
+      </p>
+
+      <a
+        class="btn dark"
+        href="tel:+34933105067"
+      >
+        Reservar per telèfon
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <div class="footer-brand">
+
+    <img
+      src="./public/assets/logo.png"
+      alt="L'Antic Bocoi del Gòtic"
+    >
+
+  </div>
+
+  <span>
+    Cuina catalana al cor de Barcelona.
+  </span>
+
+</footer>
+
+
+<script src="./src/app.js"></script>
+
+</body>
+</html>
