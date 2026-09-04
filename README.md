@@ -1,0 +1,1 @@
+Demo estática para L'Antic Bocoi del Gòtic. Vercel: Framework Other · Root ./ · Build vacío · Output Directory .
